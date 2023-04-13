@@ -1,13 +1,36 @@
+@import 'colors.css';
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; /* Establece la imagen como fondo del contenedor */
+}
+body:before {
+  content: ""; /* Crea un pseudo-elemento para aplicar el degradado */
+  position: fixed; /* Establece la posición absoluta para el pseudo-elemento */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Ancho del degradado */
+  background: linear-gradient(to right, var(--Eerie-black), rgba(0, 0, 0, 0)); /* Crea el degradado */
+  opacity: 100%;
+}
+
+body:after {
+  content: ""; /* Crea otro pseudo-elemento para aplicar el efecto de desenfoque */
+  position: fixed; /* Establece la posición absoluta para el pseudo-elemento */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1; /* Establece un índice z negativo para que el pseudo-elemento quede detrás de la imagen */
+  background-image: url('Monster.jpg'); /* Establece la imagen de fondo */
+  background-size: cover; /* Escala la imagen para que cubra todo el contenedor */
+  background-position: center; /* Centra la imagen de fondo en el contenedor */
+  filter: blur(0px); /* Aplica el efecto de desenfoque */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+

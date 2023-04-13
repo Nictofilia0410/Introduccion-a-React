@@ -1,0 +1,86 @@
+@import '../colors.css';
+p {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: var(--silver);
+    font-size: 24px;
+    font-family: 'Fjalla One', sans-serif;
+    text-shadow: 0px 0px 10px var(--claret);
+}
+.todoItem {
+    margin: 0 10% 0 10%;
+    background-color: var(--Eerie-black);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    box-shadow: 0px 5px 40px var(--claret);
+    border: 1px solid var(--claret);
+    border-radius: 12px;
+}
+
+.TodoItem-p {
+    color: var(--silver);
+    font-family: 'Fjalla One', sans-serif;
+    margin: 24px 0 24px 24px;
+    width: calc(100% - 120px);
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    text-shadow: 0px 0px 10px var(--claret);
+}
+
+.Icon {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.Icon-check {
+    filter: brightness(150%);
+    height: 42px;
+    width: 42px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px var(--silver);
+    transform: rotate(0);
+    transition: .3s ease;
+}
+
+.Icon-check:hover {
+    filter: brightness(300%);
+    transform: rotate(180deg);
+}
+.Icon-check--active {
+    filter: brightness(300%);
+}
+
+.TodoItem-p--complete {
+    text-decoration: line-through;
+    text-decoration-color: var(--silver);
+    text-decoration-thickness: 3px;
+}
+
+
+.Icon-delete {
+    color: var(--dark-goldenrod);
+    text-shadow: 0px 0px 15px var(--dark-goldenrod);
+    position: absolute;
+    top: -24px;
+    right: 10px;
+    transform: rotate(0);
+    transition: .3s ease;
+}
+
+.Icon-delete:hover {
+    color: var(--fire-engine-red);
+    text-shadow: 0px 0px 15px var(--silver);
+    transform: rotate(250deg);
+}

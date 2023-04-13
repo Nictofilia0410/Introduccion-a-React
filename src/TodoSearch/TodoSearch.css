@@ -1,0 +1,26 @@
+@import '../colors.css';
+
+.TodoSearch {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    padding-bottom: 20px;
+}
+.InputTodoSearch {
+    border-radius: 12px;
+    font-family: 'Gruppo', cursive;;
+    font-size: large;
+    color: var(--silver);
+    text-align: center;
+    padding: 8px 0 8px 0;
+    width: 60%;
+    max-width: 300px;
+    background-color: var(--Eerie-black);
+    box-shadow: 0px 5px 30px var(--dark-goldenrod);
+    border: 1px solid var(--dark-goldenrod);
+}
+
+.InputTodoSearch::placeholder {
+    color: var(--silver);
+}
