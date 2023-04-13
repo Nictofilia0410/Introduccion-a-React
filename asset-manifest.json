@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Introduccion-a-React/static/css/main.c321fd69.css",
+    "main.js": "/Introduccion-a-React/static/js/main.cf85d5df.js",
+    "static/media/Monster.jpg": "/Introduccion-a-React/static/media/Monster.ea2a97d55a26fdcbccc6.jpg",
+    "index.html": "/Introduccion-a-React/index.html",
+    "main.c321fd69.css.map": "/Introduccion-a-React/static/css/main.c321fd69.css.map",
+    "main.cf85d5df.js.map": "/Introduccion-a-React/static/js/main.cf85d5df.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c321fd69.css",
+    "static/js/main.cf85d5df.js"
+  ]
+}
